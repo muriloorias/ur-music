@@ -13,7 +13,7 @@ main {
     justify-content: center;
     height: calc(100vh - 100px);
     padding: 10px;
-    gap: 8px; 
+    gap: 8px;
 }
 
 .login {
@@ -24,7 +24,8 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    gap: 6px; /* reduz o espaço entre os campos */
+    gap: 6px;
+    /* reduz o espaço entre os campos */
 }
 
 /* Inputs */
@@ -33,26 +34,46 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin: 0; 
+    margin: 0;
     box-sizing: border-box;
     border-radius: 5px;
 }
 
-button{
+button {
     border-radius: 15px;
     background-color: rgb(50, 90, 255);
     color: white;
-    
+
 }
 
-.clicable{
-      cursor: pointer;
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding-right: 35px;
+    /* espaço pro ícone não ficar por cima do texto */
+    box-sizing: border-box;
+}
+
+.password-container img {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.clicable {
+    cursor: pointer;
 }
 
 .concetWith {
     text-align: center;
     font-size: 14px;
-    margin-top: 5px; 
+    margin-top: 5px;
 }
 
 .concetWith img {
@@ -61,6 +82,6 @@ button{
     width: 50px;
 }
 
-.center{
+.center {
     align-items: center;
 }

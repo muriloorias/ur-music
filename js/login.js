@@ -1,3 +1,4 @@
+const emailInput = document.getElementById("emailInput");
 const passwordInput = document.getElementById("passwordInput");
 const button = document.getElementById("showPassword")
 
@@ -9,4 +10,13 @@ function showPassword(){
             passwordInput.type = "password";
             button.src = "../imgs/hidden.png";
       }
+}
+
+function testLogin(){
+    if (emailInput.value === "emailTeste@teste.com" && passwordInput.value === "passwordTest"){
+        alert("logado com sucesso!")
+    }
+    else {
+        alert("falha ao logar")
+    }
 }

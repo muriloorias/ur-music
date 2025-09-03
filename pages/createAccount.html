@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ur-music</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
-      
+<main>
+    <h1>bem vindo de volta faça o login para continuar</h1>
+    <div class="login">
+        <label for="emailInput">email:</label>
+        <input type="email" id="emailInput" placeholder="digite seu email">
+        <label for="passwordInput">senha:</label>
+        <div class="password-container">
+            <input type="password" id="passwordInput" placeholder="senha">
+            <img onclick="showPassword()" src="../imgs/hidden.png" id="showPassword" width="20"
+                 class="clicable">
+        </div>
+        <label for="repeatPassword">repita a senha:</label>
+        <input type="password" id="repeatPassword" placeholder="rescreva a senha">
+        <button class="center" onclick="testCreateAccount()">avançar</button>
+    </div>
+    <a href="createAccount.html">já tem uma conta? Faça login agora</a>
+    <script src="../js/createAccount.js"></script>
+</main>
 </body>
 </html>
